@@ -39,9 +39,21 @@ Read the [AWS KMS BYOK Lab and Interview Guide](kms-byok/AWS-KMS-BYOK-Lab-and-In
 - Added unit tests with mocked AWS API responses.
 
 Read the [Security Posture Auditor guide](python-security-posture-auditor/README.md).
+
+### AWS Control Tower landing zone
+
+- Deployed an AWS Control Tower 4.0 landing zone.
+- Created Security and Sandbox organizational units.
+- Separated AWS Config aggregation and centralized CloudTrail logging into dedicated accounts.
+- Configured IAM Identity Center for temporary multi-account SSO access.
+- Enabled automatic account enrollment and registered the Sandbox OU.
+- Applied mandatory preventive controls and documented detective-control cost tradeoffs.
+- Added cost alerts and short log-retention policies.
+
+Read the [AWS Control Tower Landing Zone Lab and Interview Guide](control-tower/AWS-Control-Tower-Landing-Zone-Lab-and-Interview-Guide.md).
+
 ## Planned labs
 
-- AWS Control Tower security guardrails and account governance
 - Additional S3, EC2 security group and CloudTrail auditor modules
 
 ## Security notice
