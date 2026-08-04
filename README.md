@@ -16,6 +16,19 @@ Hands-on AWS security labs focused on practical engineering, troubleshooting and
 
 Read the [CloudHSM Lab and Interview Guide](cloudhsm/AWS-CloudHSM-Lab-and-Interview-Guide.md).
 
+### AWS KMS BYOK and imported key material
+
+- Created an external-origin symmetric KMS key.
+- Generated 256-bit AES material outside AWS.
+- Wrapped the material with RSA-4096 and RSA-OAEP SHA-256.
+- Imported the material and tested encryption contexts.
+- Demonstrated cryptographic erasure by deleting the imported material.
+- Reimported the identical material and restored access to existing ciphertext.
+- Audited the lifecycle using AWS CloudTrail.
+- Documented key custody, durability, rotation and production controls.
+
+Read the [AWS KMS BYOK Lab and Interview Guide](kms-byok/AWS-KMS-BYOK-Lab-and-Interview-Guide.md).
+
 ### Python AWS Security Posture Auditor
 
 - Built a read-only Python and Boto3 security posture auditor.
@@ -26,10 +39,8 @@ Read the [CloudHSM Lab and Interview Guide](cloudhsm/AWS-CloudHSM-Lab-and-Interv
 - Added unit tests with mocked AWS API responses.
 
 Read the [Security Posture Auditor guide](python-security-posture-auditor/README.md).
-
 ## Planned labs
 
-- AWS KMS imported key material (BYOK)
 - AWS Control Tower security guardrails and account governance
 - Additional S3, EC2 security group and CloudTrail auditor modules
 
