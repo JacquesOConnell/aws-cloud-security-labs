@@ -16,11 +16,22 @@ Hands-on AWS security labs focused on practical engineering, troubleshooting and
 
 Read the [CloudHSM Lab and Interview Guide](cloudhsm/AWS-CloudHSM-Lab-and-Interview-Guide.md).
 
+### Python AWS Security Posture Auditor
+
+- Built a read-only Python and Boto3 security posture auditor.
+- Added IAM checks for missing MFA, aged access keys and excessive permissions.
+- Added KMS checks for key state, rotation and imported key material.
+- Produced normalized console, JSON and CSV findings.
+- Enforced execution through a dedicated read-only audit role.
+- Added unit tests with mocked AWS API responses.
+
+Read the [Security Posture Auditor guide](python-security-posture-auditor/README.md).
+
 ## Planned labs
 
 - AWS KMS imported key material (BYOK)
 - AWS Control Tower security guardrails and account governance
-- Python/boto3 security automation
+- Additional S3, EC2 security group and CloudTrail auditor modules
 
 ## Security notice
 
