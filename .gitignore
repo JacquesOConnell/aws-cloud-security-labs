@@ -1,0 +1,47 @@
+# Secrets and credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+credentials*
+
+# Certificate lab artifacts
+*.crt
+*.cer
+*.csr
+*.srl
+*.pub
+*.der
+*.bin
+*.sig
+*.zip
+
+# Terraform state and sensitive variables
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+.terraform/
+.terraform.lock.hcl
+crash.log
+
+# AWS and local configuration
+.aws/
+aws-config*
+aws-credentials*
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files
+tmp/
+work/
+*.log
+*.bak
