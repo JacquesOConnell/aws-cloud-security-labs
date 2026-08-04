@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Reports can contain live AWS identifiers.
+reports/*.json
+reports/*.csv
+!reports/.gitkeep
+
+# Local AWS and environment data
+.env
+.env.*
+.aws/
+trust-policy.json
+
+
