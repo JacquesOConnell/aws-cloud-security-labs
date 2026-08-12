@@ -1,11 +1,11 @@
-﻿# AWS CloudHSM Hands-On Lab and Interview Guide
+# AWS CloudHSM Implementation and Technical Guide
 
 **Prepared for:** Jacques O'Connell  
 **Lab date:** 4 August 2026  
 **Region:** `af-south-1` (Africa - Cape Town)  
 **Cluster:** `<redacted>`  
 **Mode and type:** FIPS, `hsm2m.medium`  
-**Purpose:** Cloud Security Engineer interview preparation and repeatable lab reference
+**Purpose:** Repeatable hands-on lab, implementation record, and technical reference
 
 > **Achievement statement:** I deployed, initialized and activated an AWS CloudHSM cluster in FIPS mode. I verified the first HSM through independent AWS and Marvell certificate chains, created a customer-controlled root CA, signed the cluster CSR, configured an EC2 CloudHSM client, established separate administrator and crypto-user roles, generated non-exportable symmetric and asymmetric keys inside the HSM, and completed an HSM-backed RSA signing and verification test.
 
@@ -596,7 +596,7 @@ CloudHSM charges accrue per active HSM-hour. After evidence has been captured:
 
 Do not delete resources in a broad or automated manner without confirming exact targets and dependencies.
 
-## 11. Interview questions and model answers
+## 11. Technical knowledge checks
 
 ### What is AWS CloudHSM?
 

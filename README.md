@@ -1,6 +1,6 @@
 # AWS Cloud Security Labs
 
-Hands-on AWS security labs focused on practical engineering, troubleshooting and interview-ready explanations.
+Hands-on AWS security labs focused on practical engineering, troubleshooting, verification, and clear technical documentation.
 
 ## Completed labs
 
@@ -14,7 +14,7 @@ Hands-on AWS security labs focused on practical engineering, troubleshooting and
 - Completed HSM-backed RSA signing and verification.
 - Documented the single-HSM lab exception and production multi-AZ design.
 
-Read the [CloudHSM Lab and Interview Guide](cloudhsm/AWS-CloudHSM-Lab-and-Interview-Guide.md).
+Read the [CloudHSM Implementation and Technical Guide](cloudhsm/AWS-CloudHSM-Implementation-and-Technical-Guide.md).
 
 ### AWS KMS BYOK and imported key material
 
@@ -27,7 +27,7 @@ Read the [CloudHSM Lab and Interview Guide](cloudhsm/AWS-CloudHSM-Lab-and-Interv
 - Audited the lifecycle using AWS CloudTrail.
 - Documented key custody, durability, rotation and production controls.
 
-Read the [AWS KMS BYOK Lab and Interview Guide](kms-byok/AWS-KMS-BYOK-Lab-and-Interview-Guide.md).
+Read the [AWS KMS BYOK Implementation and Technical Guide](kms-byok/AWS-KMS-BYOK-Implementation-and-Technical-Guide.md).
 
 ### Python AWS Security Posture Auditor
 
@@ -50,7 +50,7 @@ Read the [Security Posture Auditor guide](python-security-posture-auditor/README
 - Applied mandatory preventive controls and documented detective-control cost tradeoffs.
 - Added cost alerts and short log-retention policies.
 
-Read the [AWS Control Tower Landing Zone Lab and Interview Guide](control-tower/AWS-Control-Tower-Landing-Zone-Lab-and-Interview-Guide.md).
+Read the [AWS Control Tower Landing Zone Implementation Guide](control-tower/AWS-Control-Tower-Landing-Zone-Implementation-Guide.md).
 
 ## Planned labs
 

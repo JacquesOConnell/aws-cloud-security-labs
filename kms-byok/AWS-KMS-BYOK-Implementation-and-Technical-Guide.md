@@ -1,4 +1,4 @@
-# AWS KMS BYOK Lab and Interview Guide
+# AWS KMS BYOK Implementation and Technical Guide
 
 This lab demonstrates the complete lifecycle of customer-supplied key material in AWS Key Management Service (AWS KMS): external generation, transport wrapping, import, use, deletion, reimport and audit.
 
@@ -379,7 +379,7 @@ Multiple `ImportKeyMaterial` entries can include failed attempts. Inspecting the
 4. Remove plaintext key material, wrapping parameters, import tokens, wrapped copies and test ciphertext from the workstation.
 5. Verify no sensitive artifacts were staged or committed to Git.
 
-## 19. Interview questions and model answers
+## 19. Technical knowledge checks
 
 ### What is BYOK in AWS KMS?
 
@@ -409,7 +409,7 @@ It encrypts the customer material for transport to KMS. Its corresponding privat
 
 The lab exposed the difference between importing genuinely new material for rotation and reimporting material already associated with a key. AWS rejected the existing material under `NEW_KEY_MATERIAL`; explicitly using `EXISTING_KEY_MATERIAL` restored the deleted material and recovered access.
 
-## 20. Interview-ready summary
+## 20. Project summary
 
 > I completed an AWS KMS BYOK lab using a symmetric external-origin key. I generated 256-bit AES material locally, wrapped it using an RSA-4096 KMS wrapping key with RSA-OAEP SHA-256, and imported it into KMS. I tested encryption and decryption with an authenticated encryption context, deleted the imported material to make the key unusable, and reimported the identical material to restore access to existing ciphertext. I also used CloudTrail to audit the import, deletion and cryptographic operations, and I documented the production requirements for HSM-based generation, external custody, separation of duties, expiration monitoring and tested recovery.
 

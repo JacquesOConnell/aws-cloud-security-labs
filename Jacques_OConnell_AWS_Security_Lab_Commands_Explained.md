@@ -30,7 +30,7 @@ All identifiers in this guide are placeholders. Do not paste account IDs, keys, 
 
 ---
 
-# Interview positioning: how the labs were implemented
+# Implementation context: how the labs were built
 
 ## Accurate summary
 
@@ -1403,7 +1403,7 @@ git log --oneline -5
 
 ---
 
-# Appendix A. What to memorise for the interview
+# Appendix A. Key concepts to retain
 
 Do not memorise command syntax. Be able to explain:
 

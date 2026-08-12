@@ -1,8 +1,8 @@
-# AWS Control Tower Landing Zone Lab and Interview Guide
+# AWS Control Tower Landing Zone Implementation Guide
 
 ## Purpose
 
-This guide documents a hands-on deployment of an AWS Control Tower 4.0 landing zone for a small personal cloud-security environment. It focuses on multi-account governance, centralized security services, identity, cost control, verification, and interview-ready explanations.
+This guide documents a hands-on deployment of an AWS Control Tower 4.0 landing zone for a small personal cloud-security environment. It focuses on multi-account governance, centralized security services, identity, cost control, verification, and clear technical explanations.
 
 All identifiers, email addresses, portal URLs, and unredacted screenshots are intentionally excluded.
 
@@ -236,7 +236,7 @@ The foundational Security OU and shared accounts had been created, but the Sandb
 
 The dashboard briefly displayed stale state after the landing-zone update. The authoritative status was verified under Landing zone settings, where automatic account enrollment showed `Turned on`.
 
-## Interview questions and answers
+## Technical knowledge checks
 
 ### What is AWS Control Tower?
 
@@ -266,7 +266,7 @@ It automatically applies the destination registered OU's baselines and controls 
 
 Production would use a dedicated workload-free management account, separate production and non-production OUs, least-privilege permission sets, longer tiered log retention, formal break-glass access, delegated security administrators, broader governed Regions where required, and tested detective and proactive controls.
 
-## Interview-ready project summary
+## Project summary
 
 > I deployed an AWS Control Tower 4.0 landing zone in a new AWS Organization. I configured Security and Sandbox OUs, separate accounts for centralized CloudTrail administration and AWS Config aggregation, IAM Identity Center multi-account access, automatic enrollment, mandatory preventive controls, and the Control Tower baseline on Sandbox. I limited governance to one Region and configured short log retention, no optional KMS key, and no AWS Backup to control cost. I deliberately deferred the Sandbox Config baseline because the OU had no workloads, and I documented how I would add detective controls in production.
 
